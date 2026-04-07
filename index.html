@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-</html>
+<html lang="zh-CN">
 <head>
   <mate charset="UTF-8">
-    <title>我的页面</title>
+  <mate name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>我的基米页面</title>
+    <style>
+      body{
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI".Roboto,sans-serif;
+        background:linear-gradient(135deg,#667eea 0%.#764ba2 100%);
+        heught: 100vh;
+        margin:0;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        color: white;
+      }
+      .card{
+        background:rgba(255,265,255,0.1);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius:20px;
+        text-align: center;
+        box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+        max-width:400px;
+      }
+      h1{ margin: 0 0 10px 0;}
+      .tag{
+        background: rgba(255,255,255,0.2);
+        padding: 5px 15px;
+        border-radius:20px;
+        display: inline-block;
+        margin: 5px;
+      }
+      .btn{
+        display:inline-block;
+        margin-top:20px;
+        padding:10px 30px;
+        background: white;
+        color:#764ba2;
+        text-decoration:none;
+        border-radius:25px;
+        font-weight:bold;
+      }
+      
+    </style>
 </head>
 <body>
-<h1>你好，我是无敌哈基米大王，尼科最勇猛之人</h1>
-<p>给C++敲一个全栈的转职（全栈是什么通西)</p>
+  <div class="card">
+<h1>你好，我是无敌哈基米大王</h1>
+<p>辽科大 软件工程</p>
+  <div>
+  <span class="tag">C++</span>
+  <span class="tag">在前端学习</span>
+  <span class="tag">也许会有一番作为吧（大概）</span>
   <button onclick="alert('Hello jimi!')">别点</button>  
+  </div>
+    <p>其实我是L</p>
+    <a href="#" class="btn">call me</a>
+  </div>
 </body>
 </html>
